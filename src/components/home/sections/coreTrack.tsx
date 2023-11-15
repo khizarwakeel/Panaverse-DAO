@@ -1,26 +1,8 @@
 import Button from "@/components/shared/button";
 import Wrapper from "@/components/shared/wrapper";
+import { quarter } from "@/components/shared/data";
 
 const CoreTrack = () => {
-
-  const quarter = [
-    {
-      quarterNo: "1",
-      header: "Quarter I",
-      disc: `CS-101: Object-Oriented Programming using TypeScript`,
-    },
-    {
-      quarterNo: "2",
-      header: "Quarter II",
-      disc: `W2-201: Developing Planet-Scale Web 2.0 Serverless Cloud Cloud Apps and APIs using Next.js 13 and Cloud Development Kit (CDK) for Terraform 2`,
-    },
-    {
-      quarterNo: "3",
-      header: "Quarter III",
-      disc: `$-101: Dollar Making Bootcamp - Full-Stack Template and API Product Development`,
-    },
-  ];
-
   const header = "Core Courses \n (Common in All Specializations)";
 
   return (
@@ -44,11 +26,11 @@ const CoreTrack = () => {
             </div>
           </div>
           {/* Boxes */}
-          <div className="my-20 flex lg:flex-row flex-col gap-5">
+          <div className="my-20 flex lg:flex-row flex-col items-stretch gap-5">
             {quarter.map((data, index) => (
               <div
                 key={index}
-                className="border border-gray-200 lg:w-4/12 w-full rounded-md px-10 py-16 relative -z-10"
+                className="border border-gray-200 lg:w-4/12 w-full flex flex-col justify-center rounded-md px-10 py-16 relative -z-10"
               >
                 <h4 className="font-bold text-lg">{data.header}</h4>
                 <p className="mt-2 text-gray-700">{data.disc}</p>
