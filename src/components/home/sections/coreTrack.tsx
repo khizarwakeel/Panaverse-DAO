@@ -30,11 +30,11 @@ const CoreTrack = () => {
             {quarter.map((data, index) => (
               <div
                 key={index}
-                className="border border-gray-200 lg:w-4/12 w-full flex flex-col justify-center rounded-md px-10 py-16 relative -z-10"
+                className="border border-gray-200 flex-1 flex flex-col justify-center rounded-md px-10 py-16 relative -z-10"
               >
                 <h4 className="font-bold text-lg">{data.header}</h4>
                 <p className="mt-2 text-gray-700">{data.disc}</p>
-                <span className="absolute top-6 text-gray-200 right-14 text-9xl -z-10 font-bold">
+                <span className="absolute top-6 text-gray-200 right-14 text-9xl -z-10 font-bold hover:translate-y-3 hover:duration-300">
                   {data.quarterNo}
                 </span>
               </div>
