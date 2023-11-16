@@ -5,7 +5,7 @@ interface ButtonProps {
 const ArrowButton = ({ content }: ButtonProps) => {
   return (
     <>
-      <button className="border flex gap-2 items-center border-[#00616c] text-[#00616c] outline-none rounded-md py-2 px-4 md:py-3">
+      <button className="border flex gap-2 items-center border-[#00616c] text-[#00616c] outline-none rounded-md md:px-6 md:py-2.5 px-4 py-2 font-semibold">
         {content}
         <svg
           xmlns="http://www.w3.org/2000/svg"

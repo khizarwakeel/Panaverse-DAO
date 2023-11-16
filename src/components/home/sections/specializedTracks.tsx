@@ -1,5 +1,5 @@
-import ArrowButton from "../shared/arrowButtons";
-import Wrapper from "../shared/wrapper";
+import ArrowButton from "../../shared/arrowButtons";
+import Wrapper from "../../shared/wrapper";
 
 const SpecializedTracks = () => {
   return (

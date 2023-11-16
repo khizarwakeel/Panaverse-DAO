@@ -1,6 +1,6 @@
 import HeroSection from "@/components/home/sections/heroSection";
 import CoreTrack from "@/components/home/sections/coreTrack";
-import SpecializedTracks from "@/components/home/specializedTracks";
+import SpecializedTracks from "@/components/home/sections/specializedTracks";
 
 const Home = () => {
   return (
