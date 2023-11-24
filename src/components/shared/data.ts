@@ -15,3 +15,36 @@ export const quarter = [
     disc: `$-101: Dollar Making Bootcamp - Full-Stack Template and API Product Development`,
   },
 ];
+
+export const trackData = [
+  {
+    image: "Image",
+    track: "Specialized Program",
+    trackDisc: "Web 3.0 (Blockchain) and Metaverse Specialization",
+  },
+  {
+    image: "Image",
+    track: "Specialized Program",
+    trackDisc: "Web 3.0 (Blockchain) and Metaverse Specialization",
+  },
+  {
+    image: "Image",
+    track: "Specialized Program",
+    trackDisc: "Web 3.0 (Blockchain) and Metaverse Specialization",
+  },
+  {
+    image: "Image",
+    track: "Specialized Program",
+    trackDisc: "Web 3.0 (Blockchain) and Metaverse Specialization",
+  },
+  {
+    image: "Image",
+    track: "Specialized Program",
+    trackDisc: "Web 3.0 (Blockchain) and Metaverse Specialization",
+  },
+  {
+    image: "Image",
+    track: "Specialized Program",
+    trackDisc: "Web 3.0 (Blockchain) and Metaverse Specialization",
+  },
+];
