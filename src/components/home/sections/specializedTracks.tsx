@@ -15,12 +15,12 @@ const SpecializedTracks = () => {
           </p>
         </div>
         <div className="flex gap-8">
-          <div className="rounded-lg basis-8/12 shadow-xl border border-gray-200 py-6 px-8">
+          <div className="rounded-lg basis-8/12 h-full shadow-xl border border-gray-200 py-6 px-8">
             <h4 className="text-[#00616c] text-lg">Specialized Track</h4>
             <h2 className="text-3xl font-bold my-4">
               Web 3.0 (Blockchain) and Metaverse Specialization
             </h2>
-            <p className="mb-6 text-lg text-gray-500">
+            <p className="mb-6 text-lg text-gray-500 font-light">
               This Web 3.0 and Metaverse specialization focuses on developing
               full-stack Web 3.0 and Metaverse experiences for the next
               generation of the internet by specializing in building worlds that
@@ -43,7 +43,7 @@ const SpecializedTracks = () => {
               />
             </div>
           </div>
-          <div className="basis-4/12 px-6 py-8 cursor-pointer">
+          <div className="basis-4/12 h-full px-6 py-8 cursor-pointer">
             {trackData.map((data, index) => (
               <div
                 key={index}

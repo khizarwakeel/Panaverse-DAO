@@ -23,7 +23,7 @@ const QuarterBox: FC<IProps> = ({
       >
         <h4 className="font-bold text-lg">{headered}</h4>
         <p className="mt-2 text-gray-700">{discrip}</p>
-        <span className="absolute top-6 text-gray-200 right-14 text-9xl -z-10 font-bold hover:translate-y-3 hover:duration-300">
+        <span className="absolute top-6 text-gray-200 right-14 text-9xl -z-10 font-bold">
           {quarterNum}
         </span>
       </div>
