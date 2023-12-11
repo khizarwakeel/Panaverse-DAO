@@ -13,14 +13,14 @@ const HeroSection = () => {
               Presidential Initiative for Artificial Intelligence and Computing
               (PIAIC)
             </h4>
-            <h1 className="font-extrabold text-3xl sm:text-5xl leading-tight mt-2 text-gray-900">
+            <h1 className="font-extrabold text-base sm:text-5xl leading-tight mt-2 text-gray-900">
               Certified Web 3.0 and Metaverse Developer
             </h1>
-            <p className="text-gray-500 mt-6">
+            <p className="text-gray-500 mt-6 md:text-base text-sm">
               A One and Quarter Years Panaverse DAO Earn as you Learn Program
               Getting Ready for the Next Generation of the Internet
             </p>
-            <p className="text-gray-500 my-8">
+            <p className="text-gray-500 my-8 md:text-base text-sm">
               Consolidating Web 3.0, Metaverse, Artificial Intelligence (AI),
               Cloud, Edge, Ambient Computing/IoT, Network Automation, and
               Bioinformatics Technologies
