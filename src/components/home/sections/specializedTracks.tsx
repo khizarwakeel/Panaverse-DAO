@@ -45,7 +45,7 @@ const SpecializedTracks = () => {
               />
             </div>
           </div>
-          <div className="basis-4/12 h-full px-6 lg:py-8 py-5 cursor-pointer">
+          <div className="basis-4/12 h-full lg:px-6 lg:py-8 py-5 cursor-pointer">
             {trackData.map((data, index) => (
               <div
                 key={index}
@@ -58,7 +58,7 @@ const SpecializedTracks = () => {
                 </div>
                 <div>
                   <h4 className="text-primary font-medium">{data.track}</h4>
-                  <h3 className="font-bold text-xl">{data.trackDisc}</h3>
+                  <h3 className="font-bold md:text-xl text-base mt-3">{data.trackDisc}</h3>
                 </div>
               </div>
             ))}
