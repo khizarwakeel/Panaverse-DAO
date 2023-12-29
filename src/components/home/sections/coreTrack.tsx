@@ -34,6 +34,7 @@ const CoreTrack = () => {
                 quarterNum={data.quarterNo}
                 discrip={data.disc}
                 key={index}
+                haveBorder={true}
               />
             ))}
           </div>

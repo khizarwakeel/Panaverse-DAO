@@ -27,7 +27,7 @@ const QuarterBox: FC<IProps> = ({
       >
         <h4 className="font-extrabold text-sm md:text-lg">{headered}</h4>
         <p className="mt-2 text-gray-700 text-xs md:text-base">{discrip}</p>
-        <span className="absolute top-6 text-gray-200 opacity-60 right-14 text-9xl -z-10 font-bold">
+        <span className="absolute top-0 text-gray-200 opacity-60 right-14 text-[10rem] leading-none -z-10 font-bold">
           {quarterNum}
         </span>
       </div>
