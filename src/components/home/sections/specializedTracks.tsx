@@ -26,7 +26,7 @@ const SpecializedTracks = () => {
           </p>
         </div>
         <div className="flex lg:flex-row flex-col-reverse lg:gap-14 gap-8">
-          <div className="rounded-lg lg:basis-7/12 h-full shadow-xl border border-gray-200 py-6 px-4 lg:px-8">
+          <div className="rounded-lg lg:basis-7/12 h-full sticky top-[6.6rem] shadow-xl border border-gray-200 py-6 px-4 lg:px-8">
             <h4 className="text-[#00616c] md:text-lg text-base">
               {selectedItemData?.track}
             </h4>
@@ -55,20 +55,22 @@ const SpecializedTracks = () => {
               <div
                 onClick={() => setSelectedItem(data.slug)}
                 key={index}
-                className={`flex md:flex-row flex-col items-center gap-5 pb-6 relative ${
+                className={`flex md:flex-row flex-col items-center gap-5 pb-6 ${
                   index !== trackData.length - 1 && "border-b"
                 }`}
               >
-                <div className="shrink-0 z-20">
-                  <Image
-                    src={data.image}
-                    width={500}
-                    height={500}
-                    alt={data.alt}
-                    className="h-28 w-48 object-cover rounded-md border border-gray-400 md:border-none md:p-0 p-[2px]"
-                  />
+                <div className="shrink-0 z-20 relative">
+                  <div className="relative z-20">
+                    <Image
+                      src={data.image}
+                      width={500}
+                      height={500}
+                      alt={data.alt}
+                      className="h-28 w-48 object-cover rounded-md"
+                    />
+                  </div>
+                  <div className="absolute bg-[#05a4eb] w-48 h-28 md:top-[5px] md:-left-[5px] top-1 right-1 z-0 rounded-md"></div>
                 </div>
-                <div className="absolute bg-[#05a4eb] w-48 h-28 md:top-[5px] md:-left-[5px] lg:top-6 xl:top-[5px] xl:-left-[5px] z-0 rounded-md md:block hidden"></div>
                 <div>
                   <h4 className="text-primary font-medium md:text-left text-center">
                     {data.track}
