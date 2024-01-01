@@ -69,7 +69,13 @@ const SpecializedTracks = () => {
                       className="h-28 w-48 object-cover rounded-md"
                     />
                   </div>
-                  <div className="absolute bg-[#05a4eb] w-48 h-28 md:top-[5px] md:-left-[5px] top-1 right-1 z-0 rounded-md"></div>
+                  <div
+                    className={`${
+                      data.slug === selectedItem
+                        ? "absolute bg-[#05a4eb] w-48 h-28 md:top-[5px] md:-left-[5px] top-1 right-1 z-0 rounded-md"
+                        : ""
+                    }`}
+                  ></div>
                 </div>
                 <div>
                   <h4 className="text-primary font-medium md:text-left text-center">
