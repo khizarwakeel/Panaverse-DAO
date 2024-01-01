@@ -37,13 +37,13 @@ const Footer = () => {
               Generation of the Internet
             </p>
             <div className="flex gap-7 md:justify-normal justify-center">
-              <div className="bg-[#00c2d0] p-3 rounded-full text-lg md:text-2xl text-white shadow-md">
+              <div className="bg-[#00c2d0] p-3 rounded-full text-lg md:text-2xl text-white shadow-lg">
                 <FaFacebookF />
               </div>
-              <div className="bg-[#00c2d0] p-3 rounded-full text-lg md:text-2xl text-white shadow-md">
+              <div className="bg-[#00c2d0] p-3 rounded-full text-lg md:text-2xl text-white shadow-lg">
                 <FaYoutube />
               </div>
-              <div className="bg-[#00c2d0] p-3 rounded-full text-lg md:text-2xl text-white shadow-md">
+              <div className="bg-[#00c2d0] p-3 rounded-full text-lg md:text-2xl text-white shadow-lg">
                 <FaGithub />
               </div>
             </div>
@@ -81,10 +81,10 @@ const Footer = () => {
             Made by <span className="text-[#00c2d0]">Khizar Wakeel</span>{" "}
             (Software Developer)
           </p>
-            <div className="md:text-2xl text-base text-red-700 flex justify-center mt-2">
-              {" "}
-              <FaHeart />
-            </div>
+          <div className="md:text-2xl text-base text-red-700 flex justify-center mt-2">
+            {" "}
+            <FaHeart />
+          </div>
         </div>
       </Wrapper>
     </footer>

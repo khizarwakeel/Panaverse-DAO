@@ -1,9 +1,12 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import Logo from "public/assets/logo.png";
 import Wrapper from "../shared/wrapper";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
+  const pathName = usePathname();
   return (
     <div className="bg-gray-50 sticky top-0 bg-opacity-90 backdrop-blur-md z-50">
       <Wrapper>
@@ -13,10 +16,20 @@ const Header = () => {
           </div>
           <ul className="flex items-center md:gap-10 gap-3">
             <li>
-              <Link href={"/"}>Home</Link>
+              <Link
+                href={"/"}
+                className={`${pathName === "/" ? "text-[#00636d]" : ""}`}
+              >
+                Home
+              </Link>
             </li>
             <li>
-              <Link href={"/courses"}>Courses</Link>
+              <Link
+                href={"/courses"}
+                className={`${pathName === "/courses" ? "text-[#00636d]" : ""}`}
+              >
+                Courses
+              </Link>
             </li>
           </ul>
         </header>

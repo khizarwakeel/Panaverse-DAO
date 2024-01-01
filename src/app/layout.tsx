@@ -2,6 +2,7 @@ import Header from "@/components/layout/header";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Roboto_Slab } from "next/font/google";
+import Footer from "@/components/layout/footer";
 const robotoSlab = Roboto_Slab({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body className={robotoSlab.className}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

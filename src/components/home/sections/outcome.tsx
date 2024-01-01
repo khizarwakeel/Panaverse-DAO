@@ -24,7 +24,7 @@ const Outcome = () => {
             <h1 className="md:text-5xl text-xl font-semibold lg:py-12 py-5 order-2 md:order-none">
               The Outcome for Participants of the Program
             </h1>
-            <p className="md:text-xl text-sm leading-relaxed">
+            <p className="md:text-lg text-sm leading-relaxed">
               As a graduate of this program, you will own valuable products such
               as Full-Stack App Templates, AR and VR Experiences, and APIs that
               are marketed globally by the Panaverse DAO. You will also have the
@@ -67,7 +67,7 @@ const Outcome = () => {
                       </radialGradient>
                     </defs>
                   </svg>
-                  <p className="md:text-xl text-base md:py-6">{item}</p>
+                  <p className="md:text-lg text-base md:py-6">{item}</p>
                 </div>
               ))}
             </div>
