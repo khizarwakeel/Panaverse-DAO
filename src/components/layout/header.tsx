@@ -64,8 +64,8 @@ const Header = () => {
                     >
                       <div className="flex-auto w-80 overflow-hidden rounded-sm bg-white text-sm text-gray-500 border">
                         <div className="p-3">
-                          {quarters.map((item) => (
-                            <div>
+                          {quarters.map((item,index) => (
+                            <div key={index}>
                               <p className="py-2">{item}</p>
                             </div>
                           ))}
