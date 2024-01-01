@@ -18,6 +18,7 @@ export const quarter = [
 
 export const trackData = [
   {
+    slug : "wmd",
     image: "/assets/metaverse.webp",
     alt: "metaverse",
     track: "Specialized Track",
@@ -31,16 +32,17 @@ export const trackData = [
       {
         headers: "Quarter IV",
         disc: "W3-351: Developing Smart Contracts and Planet-Scale Web 3.0 Dapps",
-        number: 4,
+        quarterNo: "4",
       },
       {
         headers: "Quarter V",
         disc: "MV-361: Developing Planet-Scale Open Virtual and Augmented Metaverse Experiences",
-        number: 5,
+        quarterNo: "5",
       },
     ],
   },
   {
+    slug : "ai",
     image: "/assets/ai.webp",
     alt: "ai",
     track: "Specialized Track",
@@ -51,12 +53,12 @@ export const trackData = [
       {
         headers: "Quarter IV",
         disc: "AI-351: Developing Planet-Scale Intelligent APIs and Python Programming",
-        number: 4,
+        quarterNo: "4",
       },
       {
         headers: "Quarter V",
         disc: "AI-361: Deep Learning and MLOps",
-        number: 5,
+        quarterNo: "5",
       },
     ],
   },

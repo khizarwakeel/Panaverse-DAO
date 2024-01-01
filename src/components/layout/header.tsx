@@ -5,7 +5,7 @@ import Wrapper from "../shared/wrapper";
 
 const Header = () => {
   return (
-    <div className="bg-gray-50 sticky top-0 bg-opacity-90 backdrop-blur-md">
+    <div className="bg-gray-50 sticky top-0 bg-opacity-90 backdrop-blur-md z-50">
       <Wrapper>
         <header className="flex justify-between items-center lg:py-5 py-3">
           <div className="w-28">
