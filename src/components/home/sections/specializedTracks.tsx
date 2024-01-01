@@ -11,8 +11,6 @@ const SpecializedTracks = () => {
 
   const selectedItemData = trackData.find((item) => item.slug === selectedItem);
 
-  console.log(selectedItem);
-
   return (
     <section>
       <Wrapper>
