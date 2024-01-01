@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Wrapper from "../shared/wrapper";
-import { FaFacebookF, FaYoutube, FaGithub, FaHeart } from "react-icons/fa";
+import { FaFacebookF, FaYoutube, FaGithub } from "react-icons/fa";
 
 const Footer = () => {
   const programsData = [
@@ -81,10 +81,6 @@ const Footer = () => {
             Made by <span className="text-[#00c2d0]">Khizar Wakeel</span>{" "}
             (Software Developer)
           </p>
-          <div className="md:text-2xl text-base text-red-700 flex justify-center mt-2">
-            {" "}
-            <FaHeart />
-          </div>
         </div>
       </Wrapper>
     </footer>
