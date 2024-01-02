@@ -1,3 +1,5 @@
+// Quartes Data
+
 export const quarter = [
   {
     quarterNo: "1",
@@ -15,6 +17,8 @@ export const quarter = [
     disc: `$-101: Dollar Making Bootcamp - Full-Stack Template and API Product Development`,
   },
 ];
+
+// Track Data
 
 export const trackData = [
   {
@@ -141,5 +145,28 @@ export const trackData = [
         quarterNo: "5",
       },
     ],
+  },
+];
+
+// Quartes Details Data
+
+export const quartersData = [
+  {
+    category: "wmd",
+    title: "CS-101: Object-Oriented Programming using TypeScript",
+    courseDescription:
+      "We will start the program by learning the fundamentals of Object-Oriented programming using JavaScript and TypeScript. We will also understand the latest Web trends i.e. Web 3.0 and Metaverse concepts and try to understand their working from the perspective of the users. ",
+  },
+  {
+    category: "ai",
+    title: "CS-101: Object-Oriented Programming using TypeScript",
+    courseDescription:
+      "We will start the program by learning the fundamentals of Object-Oriented programming using JavaScript and TypeScript. We will also understand the latest Web trends i.e. Web 3.0 and Metaverse concepts and try to understand their working from the perspective of the users. ",
+  },
+  {
+    category: "cnc",
+    title: "CS-101: Object-Oriented Programming using TypeScript",
+    courseDescription:
+      "We will start the program by learning the fundamentals of Object-Oriented programming using JavaScript and TypeScript. We will also understand the latest Web trends i.e. Web 3.0 and Metaverse concepts and try to understand their working from the perspective of the users. ",
   },
 ];

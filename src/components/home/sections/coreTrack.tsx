@@ -1,7 +1,8 @@
 import Button from "@/components/shared/button";
 import Wrapper from "@/components/shared/wrapper";
-import { quarter } from "@/components/shared/data";
+import { quarter } from "@/components/utils/data";
 import QuarterBox from "@/components/shared/quarterBox";
+import Link from "next/link";
 
 const CoreTrack = () => {
   const header = "Core Courses \n (Common in All Specializations)";
@@ -23,7 +24,9 @@ const CoreTrack = () => {
               following three core courses.
             </p>
             <div>
+              <Link href={'https://portal.piaic.org/signup'} target="_blank" >
               <Button content="Enroll Now" />
+              </Link>
             </div>
           </div>
           {/* Boxes */}

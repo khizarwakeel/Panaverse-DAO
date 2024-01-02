@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Wrapper from "../shared/wrapper";
 import { FaFacebookF, FaYoutube, FaGithub } from "react-icons/fa";
+import Link from "next/link";
 
 const Footer = () => {
   const programsData = [
@@ -37,15 +38,27 @@ const Footer = () => {
               Generation of the Internet
             </p>
             <div className="flex gap-7 md:justify-normal justify-center">
-              <div className="bg-[#00c2d0] p-3 rounded-full text-lg md:text-2xl text-white shadow-lg">
-                <FaFacebookF />
-              </div>
-              <div className="bg-[#00c2d0] p-3 rounded-full text-lg md:text-2xl text-white shadow-lg">
-                <FaYoutube />
-              </div>
-              <div className="bg-[#00c2d0] p-3 rounded-full text-lg md:text-2xl text-white shadow-lg">
-                <FaGithub />
-              </div>
+              <Link
+                href={"https://web.facebook.com/groups/panaverse?_rdc=1&_rdr"}
+                target="_blank"
+              >
+                <div className="bg-[#00c2d0] p-3 rounded-full text-lg md:text-2xl text-white shadow-lg">
+                  <FaFacebookF />
+                </div>
+              </Link>
+              <Link
+                target="_blank"
+                href={"https://www.youtube.com/@panaverse/streams"}
+              >
+                <div className="bg-[#00c2d0] p-3 rounded-full text-lg md:text-2xl text-white shadow-lg">
+                  <FaYoutube />
+                </div>
+              </Link>
+              <Link target="_blank" href={"https://github.com/panaverse"}>
+                <div className="bg-[#00c2d0] p-3 rounded-full text-lg md:text-2xl text-white shadow-lg">
+                  <FaGithub />
+                </div>
+              </Link>
             </div>
           </div>
           <div className="md:col-span-3 md:text-left text-center">

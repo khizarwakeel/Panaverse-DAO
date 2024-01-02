@@ -2,7 +2,7 @@
 import QuarterBox from "@/components/shared/quarterBox";
 import ArrowButton from "../../shared/arrowButtons";
 import Wrapper from "../../shared/wrapper";
-import { trackData } from "@/components/shared/data";
+import { trackData } from "@/components/utils/data";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -70,7 +70,7 @@ const SpecializedTracks = () => {
                   <div
                     className={`${
                       data.slug === selectedItem
-                        ? "absolute bg-[#05a4eb] w-48 h-28 md:top-[5px] md:-left-[5px] top-1 right-1 z-0 rounded-md"
+                        ? "absolute bg-gradient-to-r from-[#05a2ebd3] to-blue-800 w-48 h-28 md:top-[5px] md:-left-[5px] top-1 right-1 z-0 rounded-md"
                         : ""
                     }`}
                   ></div>

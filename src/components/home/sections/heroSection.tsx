@@ -2,6 +2,7 @@ import Wrapper from "@/components/shared/wrapper";
 import HeroImage from "public/assets/heroimage.png";
 import Image from "next/image";
 import Button from "@/components/shared/button";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -26,7 +27,9 @@ const HeroSection = () => {
               Bioinformatics Technologies
             </p>
             <div>
+              <Link href={'https://www.piaic.org/'} target="_blank" >
            <Button content="Learn More" />
+              </Link>
            </div>
           </div>
           <div>

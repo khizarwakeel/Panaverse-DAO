@@ -26,7 +26,9 @@ const Header = () => {
       <Wrapper>
         <header className="flex justify-between items-center lg:py-5 py-3">
           <div className="w-28">
+            <Link href={"/"} >
             <Image src={Logo} alt="Panaverse Dao" />
+            </Link>
           </div>
           <ul className="flex items-center md:gap-10 gap-3">
             <li>
