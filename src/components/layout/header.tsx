@@ -73,9 +73,11 @@ const Header = () => {
                       <div className="flex-auto md:w-80 w-[17rem] overflow-hidden mt-4 rounded-sm bg-white text-sm text-gray-500 border">
                         <div className="p-3">
                           {quarters.map((item, index) => (
+                            <Link href={'/courses/q1/wmd'}>
                             <div key={index}>
                               <p className="py-2">{item}</p>
                             </div>
+                            </Link>
                           ))}
                         </div>
                       </div>
