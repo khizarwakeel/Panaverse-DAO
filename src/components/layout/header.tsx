@@ -10,12 +10,15 @@ import { Popover, Transition } from "@headlessui/react";
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/20/solid";
 
 const quarters = [
-  "Web 3.0 and Metaverse Developer",
-  "Artificial Intelligence",
-  "Cloud-Native Computing",
-  "Ambient Computing and IoT",
-  "Genomics and Bioinformatics",
-  "Network Programmability and Automation",
+  { courseName: "Web 3.0 and Metaverse Developer", href: "/courses/wmd" },
+  { courseName: "Artificial Intelligence", href: "/courses/ai" },
+  { courseName: "Cloud-Native Computing", href: "/courses/cnc" },
+  { courseName: "Ambient Computing and IoT", href: "/courses/iot" },
+  { courseName: "Genomics and Bioinformatics", href: "/courses/geo" },
+  {
+    courseName: "Network Programmability and Automation",
+    href: "/courses/network",
+  },
 ];
 
 const Header = () => {
@@ -26,8 +29,8 @@ const Header = () => {
       <Wrapper>
         <header className="flex justify-between items-center lg:py-5 py-3">
           <div className="w-28">
-            <Link href={"/"} >
-            <Image src={Logo} alt="Panaverse Dao" />
+            <Link href={"/"}>
+              <Image src={Logo} alt="Panaverse Dao" />
             </Link>
           </div>
           <ul className="flex items-center md:gap-10 gap-3">
@@ -73,10 +76,14 @@ const Header = () => {
                       <div className="flex-auto md:w-80 w-[17rem] overflow-hidden mt-4 rounded-sm bg-white text-sm text-gray-500 border">
                         <div className="p-3">
                           {quarters.map((item, index) => (
-                            <Link href={'/courses/q1/wmd'}>
-                            <div key={index}>
-                              <p className="py-2">{item}</p>
-                            </div>
+                            <Link
+                              key={index}
+                              href={item.href}
+                              onClick={() => setIsPopoverOpen(false)}
+                            >
+                              <div>
+                                <p className="py-2">{item.courseName}</p>
+                              </div>
                             </Link>
                           ))}
                         </div>

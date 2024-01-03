@@ -5,20 +5,15 @@ import Link from "next/link";
 
 const Footer = () => {
   const programsData = [
-    "Web 3.0 and Metaverse Developer",
-    "Artificial Intelligence",
-    "Cloud-Native Computing",
-    "Ambient Computing and IoT",
-    "Genomics and Bioinformatics",
-    "Network Programmability and Automation",
-  ];
-  const routes = [
-    "Home",
-    "Quarter 1",
-    "Quarter 2",
-    "Quarter 3",
-    "Quarter 4",
-    "Quarter 5",
+    { courseName: "Web 3.0 and Metaverse Developer", href: "/courses/wmd" },
+    { courseName: "Artificial Intelligence", href: "/courses/ai" },
+    { courseName: "Cloud-Native Computing", href: "/courses/cnc" },
+    { courseName: "Ambient Computing and IoT", href: "/courses/iot" },
+    { courseName: "Genomics and Bioinformatics", href: "/courses/geo" },
+    {
+      courseName: "Network Programmability and Automation",
+      href: "/courses/network",
+    },
   ];
   return (
     <footer className="border-t lg:py-10 py-6">
@@ -66,21 +61,11 @@ const Footer = () => {
             {programsData.map((item, index) => {
               return (
                 <div key={index}>
-                  <p className="py-2 text-gray-400 md:text-lg text-sm">
-                    {item}
-                  </p>
-                </div>
-              );
-            })}
-          </div>
-          <div className="md:col-span-3 md:text-left text-center">
-            <h4 className="font-bold text-xl mb-3">Pages</h4>
-            {routes.map((item, index) => {
-              return (
-                <div key={index}>
-                  <p className="py-2 text-gray-400 md:text-lg text-sm">
-                    {item}
-                  </p>
+                  <Link href={item.href}>
+                    <p className="py-2 text-gray-400 md:text-lg text-sm">
+                      {item.courseName}
+                    </p>
+                  </Link>
                 </div>
               );
             })}
