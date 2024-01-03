@@ -26,15 +26,15 @@ const QuartersDetail = ({ params }: { params: QuartersDetailProps }) => {
       }}
     >
       <Wrapper>
-        <div className="grid grid-cols-2 gap-20 py-20">
-          <div className="flex flex-col justify-center">
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-20 py-20">
+          <div className="flex flex-col justify-center lg:order-none order-2">
             <h4 className="text-[#05c19c] text-xl pb-3 font-bold">
               {filteredCategory.track}
             </h4>
-            <h1 className="text-5xl text-white font-bold">
+            <h1 className="lg:text-5xl text-2xl text-white font-bold">
               {filteredCategory.trackHead}
             </h1>
-            <p className="py-8 text-lg text-gray-300">
+            <p className="py-8 md:text-lg text-base text-gray-300">
               {filteredCategory.trackDisc}
             </p>
             <div>
@@ -43,7 +43,7 @@ const QuartersDetail = ({ params }: { params: QuartersDetailProps }) => {
               </Link>
             </div>
           </div>
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center lg:order-none order-1">
             <Image
               src="/assets/core-track-tech.webp"
               alt="Core-Track"

@@ -37,9 +37,9 @@ const Header = () => {
             <li>
               <Link
                 href={"/"}
-                className={`${pathName === "/" ? "text-[#00636d]" : ""}`}
+                className={`${pathName === "/" ? "text-primary" : ""}`}
               >
-                Home
+                <span className={`${isPopoverOpen ? "text-black" : ""}`}>Home</span>
               </Link>
             </li>
             <li>
@@ -51,11 +51,13 @@ const Header = () => {
                     onMouseLeave={() => setIsPopoverOpen(false)}
                     className="inline-flex outline-none items-center gap-x-1"
                   >
-                    <span>Courses</span>
+                    <span className={`${isPopoverOpen ? "text-primary" : ""}`}>
+                      Courses
+                    </span>
                     {isPopoverOpen === false ? (
                       <ChevronDownIcon className="h-5 w-5" aria-hidden="true" />
                     ) : (
-                      <ChevronUpIcon className="h-5 w-5" aria-hidden="true" />
+                      <ChevronUpIcon className="h-5 w-5 text-primary" aria-hidden="true" />
                     )}
                   </Popover.Button>
                   <Transition
@@ -82,7 +84,9 @@ const Header = () => {
                               onClick={() => setIsPopoverOpen(false)}
                             >
                               <div>
-                                <p className="py-2">{item.courseName}</p>
+                                <p className={`py-2 hover:text-primary ${pathName === item.href ? "text-primary" : ""}`}>
+                                  {item.courseName}
+                                </p>
                               </div>
                             </Link>
                           ))}

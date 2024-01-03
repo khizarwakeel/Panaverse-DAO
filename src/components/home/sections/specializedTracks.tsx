@@ -5,6 +5,7 @@ import Wrapper from "../../shared/wrapper";
 import { trackData } from "@/components/utils/data";
 import Image from "next/image";
 import { useState } from "react";
+import Link from "next/link";
 
 const SpecializedTracks = () => {
   const [selectedItem, setSelectedItem] = useState("wmd");
@@ -34,7 +35,9 @@ const SpecializedTracks = () => {
             <p className="mb-6 text-sm md:text-lg text-gray-500 font-light">
               {selectedItemData?.trackDisc}
             </p>
+            <Link href={`/courses/${selectedItemData?.slug}`}>
             <ArrowButton content="Learn More" />
+            </Link>
             <div className="flex lg:flex-row flex-col gap-5 mt-3">
               {selectedItemData?.quarters.map((item, index) => (
                 <QuarterBox

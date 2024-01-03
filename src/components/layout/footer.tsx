@@ -1,9 +1,12 @@
+"use client";
 import Image from "next/image";
 import Wrapper from "../shared/wrapper";
 import { FaFacebookF, FaYoutube, FaGithub } from "react-icons/fa";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Footer = () => {
+  const pathName = usePathname();
   const programsData = [
     { courseName: "Web 3.0 and Metaverse Developer", href: "/courses/wmd" },
     { courseName: "Artificial Intelligence", href: "/courses/ai" },
@@ -62,7 +65,11 @@ const Footer = () => {
               return (
                 <div key={index}>
                   <Link href={item.href}>
-                    <p className="py-2 text-gray-400 md:text-lg text-sm">
+                    <p
+                      className={`py-2 hover:text-primary text-gray-400 md:text-lg text-sm ${
+                        pathName === item.href ? "text-primary" : ""
+                      }`}
+                    >
                       {item.courseName}
                     </p>
                   </Link>
