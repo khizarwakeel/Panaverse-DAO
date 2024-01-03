@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "../shared/button";
 import Wrapper from "../shared/wrapper";
 import { trackData } from "../utils/data";
@@ -37,7 +38,9 @@ const QuartersDetail = ({ params }: { params: QuartersDetailProps }) => {
               {filteredCategory.trackDisc}
             </p>
             <div>
-              <Button content="Enroll Now"></Button>
+              <Link href={"https://portal.piaic.org/signup"}>
+                <Button content="Enroll Now"></Button>
+              </Link>
             </div>
           </div>
           <div className="flex justify-center items-center">
